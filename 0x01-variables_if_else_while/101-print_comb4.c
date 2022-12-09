@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int k, m, l;
+	int k, m, o;
 
 	for (k = 48; k < 58; k++)
 	{
@@ -16,11 +16,11 @@ int main(void)
 		{
 			for (o = 50; o < 58; o++)
 			{
-				if (l > m && m > k)
+				if (o > m && m > k)
 				{
 					putchar(k);
 					putchar(m);
-					putchar(l);
+					putchar(o);
 					if (k != 55 || m != 56)
 					{
 						putchar(',');
