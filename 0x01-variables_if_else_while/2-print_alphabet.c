@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - a program that prints the alphabet in lowercase, followed by a new line
- * All your code should be in the main function
+ * main - Entery point 
+ * followed by a new line
  *Return: Always 0 (if success)
  */
 int main(void)
@@ -13,5 +13,5 @@ int main(void)
 		putchar(ch);
 	}
 	putchar ('\n');
-	return(0);
+	return (0);
 }
