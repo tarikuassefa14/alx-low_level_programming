@@ -6,27 +6,27 @@
 /**
  * main - The last digit printed the variable is greater or less than the value
  *
- * Return: Always o (if Successful)
+ * Return: Always o (if Success)
  */
 int main(void)
 {
 	int n;
-	
+	int ld;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	if ((n % 10) > 5)
+	lastn = n % 10;
+	if (ld > 5)
 	{
-		printf("Last digit of %d is %d and is greater than  5\n", n, n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
 	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
+	else if (lastn == 0)
 	{
-		printf("Last digit of %d is %d and less than 6 and not 0\n", n, n % 10);
+	printf("Last digit of %d is %d and is 0\n", n, ld);
 	}
-	else
+	else if (lastn < 6 && lastn != 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ld);
 	}
 	return (0);
 }
-
