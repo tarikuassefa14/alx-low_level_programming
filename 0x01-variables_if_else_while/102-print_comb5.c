@@ -17,13 +17,13 @@ int main(void)
 			{
 				putchar((a / 10) + 48);
 				putchar((a % 10) + 48);
-				putchar(' ');
+				putchar('32');
 				putchar((b / 10) + 48);
 				putchar((b % 10) + 48);
 				if (a != 98 || b != 99)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar('44');
+					putchar('32');
 				}
 			}
 
