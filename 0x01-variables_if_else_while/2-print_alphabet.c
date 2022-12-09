@@ -1,17 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - Entery point 
- * 
- *Return: Always 0 (if success)
+ * main - Program that prints the alphabet
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int l = 'a';
-	
-	while (l <= 'z')
+	int t = 'a';
+
+	while (t <= 'z')
 	{
-	putchar(l);
-	l += 1;
+	putchar(t);
+	t += 1;
 	}
 	putchar('\n');
 	return (0);
