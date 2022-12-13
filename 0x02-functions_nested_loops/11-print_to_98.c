@@ -1,37 +1,44 @@
 #include "main.h"
 
 /**
-  * main - This is a program that print 10 times alphabet
+  * main - This is a program that print all natural numbers from n to 98
   *
   * Return: Always 0 (if success)
   */
-void print_to_98(int la)
+void print_to_98(int n)
 {
-	int la;
+	int i;
 
-	if (la > 98)
+	if (n < 98)
 	{
-		while (la >= 98)
+		for (i = n; i <= 98; i++)
 		{
-			printf("%d", la);
-			if (la != 98)
+			if (!(i == 98))
 			{
-				printf(", ");
+				printf("%d, ", i);
 			}
-			la--;
+			else
+			{
+				printf("%d\n", i);
+			}
+		}
+	}
+	else if (n > 98)
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (!(i == 98))
+			{
+				printf("%d, ", i);
+			}
+			else
+			{
+				printf("%d\n", i);
+			}
 		}
 	}
 	else
 	{
-		while (la <= 98)
-		{
-			printf("%d", la);
-			if (la != 98)
-			{
-				printf(", ");
-			}
-			la++;
-		}
+		printf("%d\n", n);
 	}
-	printf("\n");
 }
