@@ -7,6 +7,8 @@
   */
 void print_to_98(int la)
 {
+	int la;
+
 	if (la > 98)
 	{
 		while (la >= 98)
