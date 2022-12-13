@@ -16,7 +16,7 @@ void print_to_98(int la)
 			{
 				printf(", ");
 			}
-			n--;
+			la--;
 		}
 	}
 	else
@@ -28,7 +28,7 @@ void print_to_98(int la)
 			{
 				printf(", ");
 			}
-			n++;
+			la++;
 		}
 	}
 	printf("\n");
