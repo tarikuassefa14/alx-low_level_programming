@@ -5,10 +5,10 @@
   *
   * Return: Always 0 (if success)
   */
-int _abs(int c)
+int _abs(int k)
 {
-	if (t >= 0)
-		return (t);
+	if (k >= 0)
+		return (k);
 	else
-		return (0 - t);
+		return (-k);
 }
