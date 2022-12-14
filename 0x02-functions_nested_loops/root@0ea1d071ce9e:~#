@@ -1,0 +1,17 @@
+lx-low_level_programming      Betty         school
+0x02_emacs  alx-pre_course                 essay         school_is_amazing
+0x02_vi     alx-system_engineering-devops  new_school    tmp
+0x03_vi     alx-zero_day                   right_school
+root@0ea1d071ce9e:~# cd alx-low_level_programming
+root@0ea1d071ce9e:~/alx-low_level_programming# ls
+0x00-hello_world              0x02-functions_nested_loops
+0x01-variables_if_else_while  README.md
+root@0ea1d071ce9e:~/alx-low_level_programming# cd 0x02-functions_nested_loops
+root@0ea1d071ce9e:~/alx-low_level_programming/0x02-functions_nested_loops# ls
+0-putchar.c       1-alphabet.c:8:         5-sign.c              9-times_table.c
+10-add.c          2-print_alphabet_x10.c  6-abs.c               main.h
+11-print_to_98.c  3-islower.c             7-print_last_digit.c  _putchar
+1-alphabet.c      4-isalpha.c             8-24_hours.c          README.md
+root@0ea1d071ce9e:~/alx-low_level_programming/0x02-functions_nested_loops# vi
+
+
