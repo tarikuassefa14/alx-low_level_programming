@@ -28,7 +28,7 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar(' ');
-					_putchar((mul % 10) + '0');
+					_putchar((tatu % 10) + '0');
 				}
 				else if (tatu >= 10 && tatu < 100)
 				{
