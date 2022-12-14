@@ -1,11 +1,10 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - return sum of natural numbes
+ * computes and print sum of all multiple of 3 or 5 below 1024
  *
- * Description: computes and print sum of all multiple of 3 or 5 below 1024
- *
- * Return:  the value of the sum
+ * Return:  Always 0
  *
  */
 
