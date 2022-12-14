@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-  * main - This is a program that computes the absolute value of an integer
+  * _abs - This is a program that computes the absolute value of an integer
+  *  @k: This is a real number
   *
   * Return: Always 0 (if success)
   */

@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-  * main - This is a program that print the sign of a number
+  * print_sign - This is a program that print the sign of a number
+  *  @n: This is a real number
   *
   * Return: Always 0 (if success)
   */

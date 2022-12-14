@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-  * main - This is a program that print the last digit of a number
+  * print_last_digit - This is a program that print the last digit of a number
+  * @k: This is a real number
   *
   * Return: Always 0 (if success)
   */

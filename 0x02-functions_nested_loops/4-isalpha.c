@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-  * main - This is a program that print checks for alphabetic character
+  * _isalpha - This is a program that print checks for alphabetic character
+  * @c: This is an ASCII character
   *
   * Return: Always 0 (if success)
   */
