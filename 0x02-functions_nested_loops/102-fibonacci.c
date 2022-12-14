@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - return first 50 fabonacci 
- *
+ * main - return first 50 fabonacci
  * Description: print firs 50 fabonacci
  *
  * Return: 0 -> end of program
