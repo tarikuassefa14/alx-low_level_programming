@@ -5,7 +5,7 @@
  *
  * Description: computes and print sum of all multiple of 3 or 5 below 1024
  *
- * Return: Always 0
+ * Return:  the value of the sum
  *
  */
 
