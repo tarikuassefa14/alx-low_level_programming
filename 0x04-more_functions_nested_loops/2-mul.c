@@ -2,7 +2,7 @@
 
 /**
 * mul - multipllied two numbers together
-* @a: is first integer 
+* @a: is first integer
 * @b: is second integer
 * Return: a*b
 */
