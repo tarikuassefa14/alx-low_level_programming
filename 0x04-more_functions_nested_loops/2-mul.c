@@ -2,8 +2,8 @@
 
 /**
 * mul - multipllied two numbers together
-* @a: an integer 
-* @b: aslo an integer
+* @a: is first integer 
+* @b: is second integer
 * Return: a*b
 */
 
