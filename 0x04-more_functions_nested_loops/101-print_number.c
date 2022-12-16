@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
-* print_number - find and print prime factor of 612852475143
+* print_number - function that prints an integer number
+* @n: integer
 *
-* @n: number to be printed
-*
-* Return: 0-> end of program
+* Return: Always 0 (if success)
 */
 
 void print_number(int n)
 {
-	unsigned int number = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
 		_putchar(45);
-		number = -number;
+		num = -num;
 	}
-	if (number / 10)
+	if (num / 10)
 	{
-		print_number(number / 10);
+		print_number(num / 10);
 	}
-	_putchar((number % 10) + '0');
+	_putchar((num % 10) + '0');
 }
