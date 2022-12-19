@@ -7,27 +7,30 @@
  */
 int main(void)
 {
-	int a, b;
+	int k= 48;
+	int l = 0;
+	int m;
+	int n = 44;
 
-	for (a = 0; a < 100; a++)
+	while (a <= 99)
 	{
-		for (b = 0; b < 100; b++)
+		b = a + 1;
+		while (b <= 99)
 		{
-			if (a < b)
+			putchar((a / 10) + n1);
+			putchar((a % 10) + n1);
+			putchar(32);
+			putchar((b / 10) + n1);
+			putchar((b % 10) + n1);
+			if (a != 98 || b != 99)
 			{
-				putchar((a / 10) + 48);
-				putchar((a % 10) + 48);
-				putchar('32');
-				putchar((b / 10) + 48);
-				putchar((b % 10) + 48);
-				if (a != 98 || b != 99)
-				{
-					putchar('44');
-					putchar('32');
-				}
+				putchar(com);
+				putchar(32);
 			}
-
+			b += 1;
 		}
+		a += 1;
 	}
 	putchar('\n');
 	return (0);
+}
