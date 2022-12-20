@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _puts - prints a string backwards, then adds a new line after it.
+* _puts - print function that outputs a string and then a new line
 *
 * @str: String
 *
