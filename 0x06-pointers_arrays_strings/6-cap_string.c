@@ -10,9 +10,7 @@
 
 char *cap_string(char *s)
 {
-	int x:
-
-	x = 0;
+	int x = 0;
 
 	while (s[x] != '\0')
 	{
