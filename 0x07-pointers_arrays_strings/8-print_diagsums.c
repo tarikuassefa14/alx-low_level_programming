@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 
 	for (x = 0; x < size; x++)
 	{
-		sum1 += a[(size * x) + x)]; 
+		sum1 += a[(size * x) + x]; 
 		sum2 += a[(size * (x + 1)) - (x + 1)];
 	}
 
