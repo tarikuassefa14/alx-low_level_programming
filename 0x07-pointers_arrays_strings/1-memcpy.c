@@ -3,9 +3,9 @@
 /**
 * *_memcpy - function that copies the memory area.
 *
-* @s: Buff to filled memory area
+* @dest: Buff to filled memory area
 *
-* @b: Constant data byte
+* @src: Constant data byte
 *
 * @n: Max bytes to copy
 *
