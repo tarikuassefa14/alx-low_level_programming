@@ -3,9 +3,9 @@
 /**
  * _strstr - function that locates a substring.
  *
- * @haystack: first string 
+ * @haystack: first string
  *
- * @needle: second string 
+ * @needle: second string
  *
  * Return: Null
  */
