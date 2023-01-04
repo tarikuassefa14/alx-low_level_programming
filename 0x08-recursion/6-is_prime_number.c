@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prim - function that returns the power of number
+ * is_prime - function that returns the power of number
  *
  * @n: This is number
  *
