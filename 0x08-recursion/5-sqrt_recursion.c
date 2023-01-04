@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * natural_sqare_root_check - function that calculates a number's natural square root
+ * natural_sqare_root_check - function cal number's natural square root
  *
  * @a: The first nummber
  *
@@ -22,7 +22,7 @@ int natural_sqare_root_check(int a, int b)
 /**
  * _sqrt_recursion - obtain the natural square root of a number
  *
- * @n: integer number 
+ * @n: integer number
  *
  * Return: Square root result
  */
