@@ -25,7 +25,7 @@ int is_prime(int n, int y)
 /**
 * is_prime_number - check the  prime number
 *
-* @n: Checked number 
+* @n: Checked number
 *
 * Return: Show an int 1 prime or an int 0 not prime
 */
