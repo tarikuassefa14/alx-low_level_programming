@@ -1,52 +1,48 @@
 #include "main.h"
-
 /**
- * _strlen_recursion - size
- * @s: pointer to string params
- * Return: recursion
- */
+*longitud - function that returns the power of number
+*@s: string
+*
+*Return: length of a string
+*/
+int longitud(char *s);
 
-int _strlen_recursion(char *s)
+int longitud(char *s)
 {
-	if (!*s)
+	int l = 0;
+
+	if (*s != '\0')
 	{
-		return (0);
+		l++;
+		return (longitud(s + 1) + l);
 	}
-	return (1 + _strlen_recursion(++s));
+	return (l);
 }
-
 /**
- * p1 - palindrome
- * @s: pointer to string
- * @l: position
- * Return: boolena
+ *comparar - function that returns the power of number
+ *@i: original number
+ *@l: counter to compare multiplication
+ *@s: string
+ *Return: square root
  */
-
-int p1(char *s, int l)
+int comparar(int i, int l, char *s)
 {
-	if (l < 1)
-	{
+	if (i >= l)
 		return (1);
-	}
-
-	if (*s == *(s + l))
-	{
-		return (p1(s + 1, l - 2));
-	}
-	return (0);
+	else if (s[i] == s[l])
+		return (comparar(i + 1, l - 1, s));
+	else
+		return (0);
 }
-
 /**
- * is_palindrome - palindrome
- * @s: pointer to string
- * Return: recursion
+ *is_palindrome - return 1 if is number prime
+ *@s: number to evaluate
+ *Return: 1 or 0
  */
-
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s);
+	int l = longitud(s);
+	int i = 0;
 
-	return (p1(s, len - 1));
+	return (comparar(i, l - 1, s));
 }
-~
-
