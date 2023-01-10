@@ -4,7 +4,7 @@
 /**
  * str_concat - concatenates two strings
  * @s1: first string parameter
- * @s2: first sting parameter 
+ * @s2: first sting parameter
  * Return: pointer
  */
 
