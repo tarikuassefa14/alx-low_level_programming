@@ -1,5 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * _strdup - returns a pointer to a newly allocated space in memory.
  * @str: string.
@@ -23,7 +24,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
+		yyy[r] = str[r];
 
 	return (xxx);
 }
