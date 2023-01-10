@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	while (z < x + y)
 	{
 		p[z] = s2[z - i];
-		k++;
+		z++;
 	}
 	p[z] = '\0';
 	return (p);
