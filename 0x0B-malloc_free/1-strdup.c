@@ -9,22 +9,25 @@
 
 char *_strdup(char *str)
 {
-	char *yyy;
-	int x, r = 0;
+	char *dup;
+	unsigned int i, len;
+
+	i = 0;
+	len = 0;
 
 	if (str == NULL)
 		return (NULL);
-	x = 0;
-	while (str[x] != '\0')
-		x++;
 
-	yyy = malloc(sizeof(char) * (x + 1));
+	while (str[len])
+		len++;
 
-	if (yyy == NULL)
+	dup = malloc(sizeof(char) * (len + 1));
+
+	if (dup == NULL)
 		return (NULL);
 
-	for (r = 0; str[r]; r++)
-		yyy[r] = str[r];
+	while ((dup[i] = str[i]) != '\0')
+		i++;
 
-	return (xxx);
+	return (dup);
 }
