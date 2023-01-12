@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - using malloc to allocated memory
+ * *malloc_checked - using malloc to allocated memory
  *
- * @b: size of  to allocated memory 
+ * @b: size of  to allocated memory
  *
  * Return: a pointer
  */
