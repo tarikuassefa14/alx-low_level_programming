@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (i < s1_len + s2_len)
 	{
-		con[i] = s2[i - s1_len];
+		con[i] = s2[i - siz1];
 		i++;
 	}
 	con[i] = '\0';
