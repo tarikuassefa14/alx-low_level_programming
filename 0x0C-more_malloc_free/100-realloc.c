@@ -2,47 +2,48 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatinate two string
+ * _realloc - reallocates a memory block by using malloc
  *
- * @s1: First string
- * @s2: Second string
- * @n: No of chars to be concatinated to @s2
+ * @old_size: allocated size of the old ptr
+ * @new_size: new size of the new ptr
+ * @ptr: pointer allocated by malloc
  *
- * Return: Pointer to the new string
+ * Return: new allocated address memory block.
  **/
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *ptr;
-	unsigned int s1_len = 0, s2_len = 0, i = 0;
+	char *new_ptr;
+	unsigned int i, n;
 
-	if (s1 != NULL)
-		for (; s1[s1_len]; s1_len++)
-		;
-	if (s2 != NULL)
-		for (; s2[s2_len]; s2_len++)
-		;
-	if (n >= s2_len)
-		ptr = malloc(sizeof(char) * (s1_len + s2_len + 1));
-	else
+	if (new_size == old_size)
+		return (ptr);
+
+	if (ptr == NULL)
 	{
-		ptr = malloc(sizeof(char) * (s1_len + n + 1));
-		s2_len = n;
+		ptr = malloc(new_size);
+		if (ptr == NULL)
+			return (NULL);
+		return (ptr);
 	}
-	if (s == NULL)
+	if (new_size == 0 && ptr != NULL)
+	{
+		free(ptr);
 		return (NULL);
-
-	while (i < s1_len)
-	{
-		ptr[i] = s1[i];
-		i++;
 	}
+	new_ptr = malloc(new_size);
+	if (new_ptr == NULL)
+		return (NULL);
+	if (new_size > old_size)
+		n = old_size;
+	else
+		n = new_size;
 
-	while (i < s1_len + s2_len)
+	for (i = 0; i < n; i++)
 	{
-		prt[i] = s2[i - s1_len];
-		i++;
+		new_ptr[i] = ((char *)ptr)[i];
 	}
-	ptr[i] = '\0';
+	free(ptr);
+	ptr = new_ptr;
 	return (ptr);
 }
