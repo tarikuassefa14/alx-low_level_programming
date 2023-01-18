@@ -13,24 +13,39 @@
 
 int main(int argc, char *argv[])
 {
-	int argu1, argu2, resu;
-	int (*f)(int, int);
+	int arg1, arg2, result;
+	char o;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
-	printf("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
-	argu1 = atoi(argv[1]);
-	argu2 = atoi(argv[3]);
-	f = get_op_func(argv[2]);
-	if (f == NULL)
+
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
+
+	func = get_op_func(argv[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
-	exit(99);
+		exit(99);
 	}
-	resu = f(a, b);
-	printf("%d\n", resu);
+
+	o = *argv[2];
+
+	if ((o == '/' || o == '%') && arg2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	result = func(arg1, arg2);
+
+	printf("%d\n", result);
+
 	return (0);
 }
 
