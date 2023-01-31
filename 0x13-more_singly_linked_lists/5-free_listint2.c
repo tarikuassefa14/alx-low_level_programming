@@ -1,28 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * pop_listint - deletes the head node of a listint_t
- *
- * @head: the first node in the list
- *
- * Return: if linked list is empty return 0
-*/
+ * free_listint2 - frees a listint_t list
+ * @head: double pointer to first element of list
+ */
 
-int pop_listint(listint_t **head)
+void free_listint2(listint_t **head)
 {
-	int i;
-	listint_t *hold, *next;
+	listint_t *temp;
 
-	if (*head == NULL)
-		return (0);
-
-	hold = *head;
-	next = hold->next;
-	i = hold->n;
-
-	free(hold);
-
-	*head = next;
-
-	return (i);
+	if (head == NULL)
+		return;
+	while (*head)
+	{
+		temp = (*head)->next;
+		free(*head);
+		*head = temp;
+	}
+	*head = NULL;
 }
