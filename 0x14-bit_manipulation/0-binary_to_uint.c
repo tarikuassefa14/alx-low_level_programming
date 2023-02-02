@@ -2,27 +2,27 @@
 #include <stdlib.h>
 
 /**
- * binary_to_uint - a binary number to unsigned integer
+ * binary_to_uint - converts a binary number to unsigned int
  *
- * @b: number of the binary 
+ * @b: binary number
  *
- * Return: converted of integier
+ * Return: int of converted
  */
 
 unsigned int binary_to_uint(const char *b)
 {
-	int x; 
-	unsigned int decimal_y = 0;
+	int i;
+	unsigned int decimal_v = 0;
 
 	if (!b)
 		return (0);
 
-	for (x = 0; b[i]; i++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[x] < '0' || b[x] > '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		decimal_y = 2 * decimal_y + (b[x] - '0');
+		decimal_v = 2 * decimal_v + (b[i] - '0');
 	}
 
-	return (decimal_y);
+	return (decimal_v);
 }
